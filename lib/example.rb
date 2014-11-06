@@ -5,9 +5,9 @@ class RSpecGreeter
 
   def greet
     # binding.pry
-    pubs
-    privs
-    "Hello RSpec!"
+    # puts pubs
+    # privs
+    "Hello RSpec! bro"
   end
 
   def pubs
@@ -19,5 +19,34 @@ class RSpecGreeter
 
   def privs
     puts "I'm private"
+  end
+end
+
+class Calculator
+  def add (x,y)
+    x+y
+  end
+end
+
+class Order
+  def add_entry
+  end
+end
+
+class Money
+  def initialize (amount, value)
+    @amount = amount
+  end
+end
+
+class LineItem
+  def initialize (item)
+    @item = item
+  end
+end
+
+class Item
+  def initialize (price, quantity = 1)
+    @price = price
   end
 end
